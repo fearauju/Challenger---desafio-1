@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+    <head>
+        <meta charset="UTF8">
+        <meta name ="viewport" content="width=devicewidth, initialscale=1.0">
+        <title>Criptografar mensagem</title>
+        <link rel="stylesheet" href="./Style/style.css">
+    </head>
+    <body>
+        <header><img class="logotipo" src="./img/A.png"></header>
+        <main class="paginaCriptografia">    
+            
+            <section class="paginaCriptografia__areaDigitacao">
+                <p class="areaDigitacao__Aviso">Não é permitido letras maiúsculas, acentos e caracteres especiais</p>
+                <textarea type="text" id="telaDigitacao" onclick="emFoco()" onpaste="colarMensagem()" class="areaDigitacao__texto" oninput="this.value = this.value.replace(/[^a-z0-9\s]/g, '')">digite a mensagem</textarea>                
+                <div class="areaDigitacao__posicionarBotoes">
+                    <button id="botaoCriptografar" onclick="criptografarMensagem()" class="areaDigitacao__designBotaoCriptografar">Criptografar</button>
+                    <button id="botaoDescriptografar" onclick="descriptografarMensagem()" class="areaDigitacao__designBotaoDescriptografar">Descriptografar</button>
+                </div>                
+            </section>
+              
+            <section class="paginaCriptografia__areaExibicao">                                                                                       
+                    <textarea type="text"  id="telaCriptografia"  class="areaExibicao__texto">Nenhuma mensagem                
+                    </textarea>                
+                    <button id="copiar" onclick="copiarMensagem()" class="areaExibicao__botao" hidden>Copiar</button>                                                                  
+            </section>            
+
+            <script src="app.js" defer></script>
+
+        </main>
+        <footer class="rodape">Desenvolvido por Felipe em 2024</footer>
+    </body>
+</html>
