@@ -21,3 +21,5 @@
 ## 📁 Acesso ao projeto
 
 Você pode acessar o projeto clicando [aqui](https://github.com/fearauju/Challenger---desafio-1).
+
+Você pode acessar o site clicando [aqui](https://fearauju.github.io/Challenger---desafio-1/).
