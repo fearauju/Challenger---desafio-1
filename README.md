@@ -18,7 +18,7 @@
 - ``CSS``
 - ``Html``
 
-## Minha trajetória no challenger e dificuldades no desenvolvimento
+## Dificuldades no desenvolvimento
 
 Sou iniciante e para mim ainda é muito difícil toda essa parte de posicionamento de elementos, uso de flexbox, trabalhar com margin, etc... eu tenho pouca prática, comecei ao entrar no programa one, e por mais que eu veja vídeos e explicações colocar na prática tem sido muito difícil para mim. Principalmente na parte de sobreposição, no qual a Luri - inteligência artificial da alura, me sugeriu esse exemplo para colocar o botão e a textarea por cima da imagem, mas surgiram diversos outros problemas que eu não sabia como resolver. Por exemplo, ao usar o posicionamento relativo na imagem para que ela se torne um contêiner e absoluto no botão copiar e no elemento textarea que exibiria a mensagem, e funcionou para deixar os elementos por cima da imagem (foi assim que eu entendi o design proposto no momento) e ficou parecido com o design isso até implementar as outras partes e fazer a execução para testar. Diversos outros problemas começaram a surgir, tipo quando executava a parte de desaparecer a imagem e mostrar apenas a textarea e o botão copiar, esses elementos se deslocavam e ficavam desalinhados na página. Então, tinha que pensar em outra forma de refazer essa parte. 
 
