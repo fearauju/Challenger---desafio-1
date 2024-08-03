@@ -4,12 +4,10 @@ let mensagem;
 let padraoCriptografia;
 
 const validarCaracterDigitado = document.getElementById('telaDigitacao').value;
-const botaoCriptografar = document.getElementById('botaoCriptografar');
-
 
 validarCaracterDigitado.addEventListening('input', function () {
 
-    this.value = this.value = this.value.replace(/[^a-z0-9\s]/g, '');
+    this.value = this.value = this.value.replace(/[^a-z0-9!\s]/g, '');
 
 })
 
@@ -62,22 +60,20 @@ function criptografarMensagem() {
                 }
             }
         }
-    
-    
-        limparTelaDigitacao();
+                
         limparTelaCriptografia();
         exibirMensagemCriptografada();
+        perdeuFoco();
     }
     
 }
 
 function descriptografarMensagem() {
-
-    mensagem = document.querySelector('#telaDigitacao').value;
-    mensagemDescriptografada = mensagem;
+    
+    mensagemDescriptografada = document.querySelector('#telaDigitacao').value;
     let posIndex2 = 0;
 
-    if (mensagem === '') {
+    if (mensagemDescriptografada === '') {
         alert('Digite a mensagem para descriptografar.');
         resetarCampos();
         return;
@@ -111,10 +107,10 @@ function descriptografarMensagem() {
             mensagemDescriptografada = mensagemDescriptografada.replace('ufar', 'u');
             posIndex2 += 2;
         }
-    
-        limparTelaDigitacao();
+
         limparTelaCriptografia();
         exibirMensagemDescriptografada();
+        perdeuFoco();
     }    
 }
 
@@ -148,15 +144,11 @@ function colarMensagem() {
     });
 }
 
-function limparTelaDigitacao() {
-    document.querySelector('#telaDigitacao').value = 'digite a mensagem';
-}
-
 function limparTelaCriptografia() {
     document.getElementById('telaCriptografia').innerHTML = "";
 }
 
-function emFoco() {
+function limparTelaDigitacao() {
     document.querySelector('#telaDigitacao').value = "";
 }
 
@@ -164,8 +156,16 @@ function textoTelaDesriptografia() {
     document.querySelector('#telaCriptografia').value = "Nenhuma mensagem";
 }
 
+function emFoco() {
+    document.querySelector('#telaDigitacao').value = "";
+}
+
+function perdeuFoco() {
+    document.querySelector('#telaDigitacao').value = 'digite a mensagem';
+}
+
 function resetarCampos() {
     document.getElementById('copiar').setAttribute('hidden', true);
     textoTelaDesriptografia();
-    limparTelaDigitacao();
+    perdeuFoco();
 }

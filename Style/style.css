@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root{
-    --cor-primaria: #E5E5E5;
-    --cor-retangulo: #F6F6F6;
-    --corFonte-primaria:#0A3871;
+    --cor-primaria: #0C1844;
+    --cor-retangulo: #FFF5E1;
+    --corFonte-primaria:#0C1844;
+    --corFundo-botao: #FF6969;
+    --cor-BordaTextarea: #C80036;
+    --cor-BordaBotao: #000000;
 
     --fonte-primaria: 'Inter', sans-serif;
 }
@@ -15,142 +18,161 @@
 
 body{   
     background-color: var(--cor-primaria);
-    min-height: 100vh;    
+    height: 100vh;
+    width: 100vw;         
 }
 
-.logotipo{
-    margin: 2.5rem 0 0 2.5rem;
+  .footer {
+    flex: 0 0 auto; /* Altura fixa */
+  }
+
+.logotipo{ 
+    height: 1%;  
+    width: 2%;   
 }
-.paginaCriptografia{    
+.paginaCriptografia{ 
+    flex: 1;
+    box-sizing: border-box;   
     display: flex;
     flex-direction: column;
-    height: 100vh;  
+    justify-content: space-evenly;
+    align-items: center;  
+    gap: 40px;
 }
 
-.paginaCriptografia__areaDigitacao{       
+.areaDigitacao__Aviso{  
+    color: var(--cor-BordaTextarea);
+    margin-top: 2%;
+    margin-bottom: 5%;      
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.21rem;       
+}
+
+.paginaCriptografia__areaDigitacao{ 
+    box-sizing: border-box;       
+    width: 50vw;    
     display: flex;
-    flex-direction: column; 
-    align-items: center; /
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 24px;       
 }
 
-.areaDigitacao__texto{    
-    justify-items: center;
-    align-items: center;
-    height: 100%;
-    width: 80%;
-    top: 2rem;
-    bottom: 1rem; 
-    padding: 5rem; 
-    margin: 0 0 0 15rem;
-    border: 1px solid var(--corFonte-primaria);            
-    background-color: rgba(255, 255, 255, 0.8); 
+.areaDigitacao__texto{           
+    height: 12%;   
+    width: 75%;    
+    padding: 5%;  
+    border: 0.5rem solid var(--cor-BordaTextarea);            
+    background-color: var(--cor-retangulo); 
     border-radius: 1rem; 
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 3rem;
-
 }
 
 .areaDigitacao__posicionarBotoes{
     display: flex;
-    gap: 1.5rem;
-    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;        
 }
 
-.areaDigitacao__designBotaoCriptografar{
-    bottom: 2rem;      
-    padding: 2rem 15rem; 
-    margin: 0 0 0 16rem;
-    background-color: var(--corFonte-primaria);    
+.areaDigitacao__designBotaoCriptografar{        
+    padding: 5% 10%;      
+    background-color: var(--corFundo-botao);    
     font-size: 1rem;
-    color: #FFFF; 
-    border: 1px solid var(--corFonte-primaria);     
+    color: var(--corFonte-primaria); 
+    border: 10px solid var(--cor-BordaBotao);     
     border-radius: 2rem; 
     cursor: pointer;
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 1.21rem;
 }
 
-.areaDigitacao__designBotaoDescriptografar{
-    bottom: 2rem;       
-    padding: 2rem 15rem;  
-    background-color:#D8DFE8;   
+.areaDigitacao__designBotaoDescriptografar{          
+    padding: 5% 5%;     
+    background-color:var(--corFundo-botao);   
     font-size: 1rem;
     color: var(--corFonte-primaria); 
-    border: 1px solid var(--corFonte-primaria);     
+    border: 10px solid var(--cor-BordaBotao);     
     border-radius: 2rem;
     cursor: pointer; 
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 1.21rem;
 }
 
-.areaDigitacao__Aviso{
-    color: #495057;
-    margin-bottom: 2rem;      
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
-    font-size: 3rem;
-    line-height: 1.21rem;
-       
-}
-
-.paginaCriptografia__areaExibicao{             
-    flex: 1;
+.paginaCriptografia__areaExibicao{
+    box-sizing: border-box;    
+    width: 50vw;  
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     align-items: center;
-    justify-content: center;
-    padding: 2rem;
-       
+    gap: 24px;
 }
          
-.areaExibicao__texto{     
-    justify-items: center;
-    align-items: center;
-    height: 100%;
-    width: 80%;
-    top: 2rem;
-    bottom: 1rem; 
-    padding: 5rem;
-    margin: 0 0 0 15rem;
-    border: 1px solid var(--corFonte-primaria);                
+.areaExibicao__texto{         
+    height: 12%;  
+    width: 75%;       
+    padding: 5%;   
+    border: 0.5rem solid var(--cor-BordaTextarea);                
     border-radius: 1rem;
+    background-color: var(--cor-retangulo);
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 3rem;
 }
 
 
-.areaExibicao__botao{
-    margin-top: 3rem;    
-    padding: 4rem 20rem;
-    margin-left: 16rem;
-    background-color: var(--cor-primaria);
+.areaExibicao__botao{          
+    padding: 2% 7%;   
+    background-color: var(--corFundo-botao);
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 1.21rem;
     color: var(--corFonte-primaria);
-    border: 1px solid var(--corFonte-primaria);     
+    border: 10px solid var(--cor-BordaBotao);     
     border-radius: 2rem;
     cursor: pointer;
 }
 
-.rodape{
-    margin-top: 2rem;
+.rodape{   
+    margin-top: 1%;       
+    width: 100%;     
     border: 1px solid var(--corFonte-primaria);            
-    background-color: var(--corFonte-primaria);
+    background-color: var(--cor-BordaTextarea);
     border-radius: 1rem;
     font-family: var(--fonte-primaria);
-    color: #F6F6F6;
+    color: var(--cor-retangulo);
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
     line-height: 3rem; 
+}
+
+@media (max-width: 727px){
+    .header {
+        flex: 0 0 auto; /* Altura fixa */
+      }
+    
+      .footer {
+        flex: 0 0 auto; /* Altura fixa */
+      }
+
+      .paginaCriptografia{       
+        min-height: 100vh;
+        width: auto;        
+    }
+
+    .rodape{      
+        position: sticky;
+        bottom: 0;
+    }
 }

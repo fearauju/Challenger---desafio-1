@@ -12,7 +12,7 @@
             
             <section class="paginaCriptografia__areaDigitacao">
                 <p class="areaDigitacao__Aviso">Não é permitido letras maiúsculas, acentos e caracteres especiais</p>
-                <textarea type="text" id="telaDigitacao" onclick="emFoco()" onpaste="colarMensagem()" class="areaDigitacao__texto" oninput="this.value = this.value.replace(/[^a-z0-9\s]/g, '')">digite a mensagem</textarea>                
+                <textarea type="text" id="telaDigitacao" onclick="emFoco()" onpaste="colarMensagem()" class="areaDigitacao__texto" oninput="this.value = this.value.replace(/[^a-z0-9!\s]/g, '')">digite a mensagem</textarea>                
                 <div class="areaDigitacao__posicionarBotoes">
                     <button id="botaoCriptografar" onclick="criptografarMensagem()" class="areaDigitacao__designBotaoCriptografar">Criptografar</button>
                     <button id="botaoDescriptografar" onclick="descriptografarMensagem()" class="areaDigitacao__designBotaoDescriptografar">Descriptografar</button>
@@ -20,7 +20,7 @@
             </section>
               
             <section class="paginaCriptografia__areaExibicao">                                                                                       
-                    <textarea type="text"  id="telaCriptografia"  class="areaExibicao__texto">Nenhuma mensagem                
+                    <textarea type="text"  id="telaCriptografia"  class="areaExibicao__texto" readonly >Nenhuma mensagem                
                     </textarea>                
                     <button id="copiar" onclick="copiarMensagem()" class="areaExibicao__botao" hidden>Copiar</button>                                                                  
             </section>            
