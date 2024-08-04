@@ -30,4 +30,4 @@ A parte da lógica consegui fazer com muito menos tempo do que perdi tentando co
 
 Você pode acessar o projeto clicando [aqui](https://github.com/fearauju/Challenger---desafio-1).
 
-Você pode acessar o site clicando [aqui]([https://fearauju.github.io/Challenger---desafio-1/](https://challenger-desafio-1.vercel.app/).
+Você pode acessar o site clicando [aqui](https://challenger-desafio-1.vercel.app/).
