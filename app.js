@@ -60,7 +60,7 @@ function criptografarMensagem() {
                 }
             }
         }
-                
+
         limparTelaCriptografia();
         exibirMensagemCriptografada();
         perdeuFoco();
@@ -120,11 +120,13 @@ function exibirMensagem(tag, texto) {
 }
 
 function exibirMensagemCriptografada() {
+    document.getElementById('telaCriptografia').classList.add('semImagem');
     document.getElementById('copiar').removeAttribute('hidden');
     document.getElementById('telaCriptografia').value = mensagemCriptografada;
 }
 
 function exibirMensagemDescriptografada() {
+    document.getElementById('telaCriptografia').classList.add('semImagem');  
     document.getElementById('copiar').removeAttribute('hidden');
     document.getElementById('telaCriptografia').value = mensagemDescriptografada;
 }

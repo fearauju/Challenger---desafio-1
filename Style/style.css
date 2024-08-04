@@ -2,8 +2,7 @@
 
 :root{
     --cor-primaria: #0C1844;
-    --cor-retangulo: #FFF5E1;
-    --corFonte-primaria:#0C1844;
+    --cor-retangulo: #FFF5E1;   
     --corFundo-botao: #FF6969;
     --cor-BordaTextarea: #C80036;
     --cor-BordaBotao: #000000;
@@ -12,167 +11,119 @@
 }
 
 *{
-    padding: 0;
-    margin: 0;    
+    background: var(--cor-primaria);  
+    font-size: 32px;
+    line-height: 150%;               
 }
 
-body{   
-    background-color: var(--cor-primaria);
-    height: 100vh;
-    width: 100vw;         
+body{
+    height: 100%;
 }
 
-  .footer {
-    flex: 0 0 auto; /* Altura fixa */
-  }
-
-.logotipo{ 
-    height: 1%;  
+.logoAlura{ 
+    margin-left: 10px;
+    padding-top: 10px;
     width: 2%;   
 }
-.paginaCriptografia{ 
-    flex: 1;
-    box-sizing: border-box;   
+.paginaCriptografia{     
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;  
-    gap: 40px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    height: 100%;  
+}
+
+.areaDigitacao__texto{           
+    color: var(--cor-primaria);
+    margin-top: 90px;
+	text-transform: lowercase;  
+    border: none;            
+    background-color: var(--cor-retangulo); 
+    border-radius: 24px; 
+    font-family: var(--fonte-primaria);
+    font-weight: 400;     
 }
 
 .areaDigitacao__Aviso{  
     color: var(--cor-BordaTextarea);
-    margin-top: 2%;
-    margin-bottom: 5%;      
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.21rem;       
-}
-
-.paginaCriptografia__areaDigitacao{ 
-    box-sizing: border-box;       
-    width: 50vw;    
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    gap: 24px;       
-}
-
-.areaDigitacao__texto{           
-    height: 12%;   
-    width: 75%;    
-    padding: 5%;  
-    border: 0.5rem solid var(--cor-BordaTextarea);            
-    background-color: var(--cor-retangulo); 
-    border-radius: 1rem; 
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 3rem;
+    font-size: 18px; 
+    margin-top: 150px;   
 }
 
 .areaDigitacao__posicionarBotoes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;        
+    display:flex;
+    margin-top: 50px;           
 }
 
-.areaDigitacao__designBotaoCriptografar{        
-    padding: 5% 10%;      
-    background-color: var(--corFundo-botao);    
-    font-size: 1rem;
-    color: var(--corFonte-primaria); 
-    border: 10px solid var(--cor-BordaBotao);     
-    border-radius: 2rem; 
+.areaDigitacao__designBotaoCriptografar{             
+    background-color: var(--corFundo-botao);         
+    border: 1px solid var(--cor-BordaBotao);     
+    border-radius: 24px;
+    color: var(--cor-primaria);  
     cursor: pointer;
-    font-family: var(--fonte-primaria);
+    font-family: var(--fonte-primaria);    
     font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.21rem;
+    height: 67px;
+    width: 328px;   
 }
 
-.areaDigitacao__designBotaoDescriptografar{          
-    padding: 5% 5%;     
-    background-color:var(--corFundo-botao);   
-    font-size: 1rem;
-    color: var(--corFonte-primaria); 
-    border: 10px solid var(--cor-BordaBotao);     
-    border-radius: 2rem;
+.areaDigitacao__designBotaoDescriptografar{                
+    background-color:var(--corFundo-botao);  
+    border: 1px solid var(--cor-BordaBotao);     
+    border-radius: 24px;
+    color: var(--cor-primaria);
     cursor: pointer; 
     font-family: var(--fonte-primaria);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.21rem;
-}
-
-.paginaCriptografia__areaExibicao{
-    box-sizing: border-box;    
-    width: 50vw;  
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    gap: 24px;
+    font-weight: 400;  
+    height: 67px;
+    margin-left: 30px;
+    width: 328px; 
 }
          
-.areaExibicao__texto{         
-    height: 12%;  
-    width: 75%;       
-    padding: 5%;   
-    border: 0.5rem solid var(--cor-BordaTextarea);                
-    border-radius: 1rem;
+.areaExibicao__texto{             
     background-color: var(--cor-retangulo);
+    background-image: url(/img/boneco.png);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    margin-left: 98px;
+    margin-top: 25px;
+    padding-left: 20px;
+    position: fixed;
     font-family: var(--fonte-primaria);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 3rem;
+    font-weight: 400;  
+    color: var(--cor-primaria);         
+    cursor: pointer; 
+    height: 500px;     
 }
 
 
-.areaExibicao__botao{          
-    padding: 2% 7%;   
+.areaExibicao__botao{              
+    border: 1px solid var(--cor-BordaBotao);
     background-color: var(--corFundo-botao);
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.21rem;
-    color: var(--corFonte-primaria);
-    border: 10px solid var(--cor-BordaBotao);     
-    border-radius: 2rem;
+    border-radius: 24px;
+    color: var(--cor-primaria);
     cursor: pointer;
+    height: 67px;
+    margin-left: 125px;
+    margin-top: 430px;   
+    position: absolute;
+    width: 336px; 
 }
 
-.rodape{   
-    margin-top: 1%;       
-    width: 100%;     
-    border: 1px solid var(--corFonte-primaria);            
+.rodape{    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;                  
+    border: 1px solid var(--cor-primaria);            
     background-color: var(--cor-BordaTextarea);
-    border-radius: 1rem;
+    border-radius: 24px;
     font-family: var(--fonte-primaria);
     color: var(--cor-retangulo);
-    font-weight: 700;
-    font-size: 1rem;
-    text-align: center;
-    line-height: 3rem; 
+    font-weight: 700; 
+    text-align: center;   
 }
 
-@media (max-width: 727px){
-    .header {
-        flex: 0 0 auto; /* Altura fixa */
-      }
-    
-      .footer {
-        flex: 0 0 auto; /* Altura fixa */
-      }
-
-      .paginaCriptografia{       
-        min-height: 100vh;
-        width: auto;        
-    }
-
-    .rodape{      
-        position: sticky;
-        bottom: 0;
-    }
+.semImagem {
+    background-image: none;
 }
