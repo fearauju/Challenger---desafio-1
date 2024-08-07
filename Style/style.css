@@ -4,7 +4,7 @@
     --cor-primaria: #0C1844;
     --cor-retangulo: #FFF5E1;   
     --corFundo-botao: #FF6969;
-    --cor-BordaTextarea: #C80036;
+    --cor-Fundo-Rodape: #C80036;
     --cor-BordaBotao: #000000;
 
     --fonte-primaria: 'Inter', sans-serif;
@@ -17,7 +17,13 @@
 }
 
 body{
-    height: 100%;
+    
+    height: 100vh; /* altura alterada para o padrão viewport-height */
+    margin: 0; /* retirada da margem padrão dos navegadores */
+    display: flex; /* definição do display flex para a utilização da altura da página por completo */
+    flex-direction: column; /* direção da página em coluna para que o header, main e rodapé fiquem um abaixo do outro */
+    justify-content: space-between; /* adicionando espaço automático entre os elementos header, main e rodapé para que o body ocupe a altura inteira da página */
+    overflow: hidden; /* escondendo as barras de scroll, pois a barra de scroll inferior ativa a barra lateral */
 }
 
 .logoAlura{ 
@@ -44,7 +50,7 @@ body{
 }
 
 .areaDigitacao__Aviso{  
-    color: var(--cor-BordaTextarea);
+    color: var(--cor-Fundo-Rodape);
     font-size: 18px; 
     margin-top: 150px;   
 }
@@ -110,18 +116,16 @@ body{
     width: 336px; 
 }
 
-.rodape{    
-    position: fixed;
-    bottom: 0;
+.rodape{ 
     width: 100%;
-    height: 40px;                  
-    border: 1px solid var(--cor-primaria);            
-    background-color: var(--cor-BordaTextarea);
+    height: 40px;
+    border: 1px solid var(--cor-primaria);
+    background-color: var(--cor-Fundo-Rodape);
     border-radius: 24px;
     font-family: var(--fonte-primaria);
     color: var(--cor-retangulo);
     font-weight: 700; 
-    text-align: center;   
+    text-align: center;
 }
 
 .semImagem {
