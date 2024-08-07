@@ -6,11 +6,13 @@
  
 ## :hammer: Funcionalidades adicionadas ao projeto
  
-- `Funcionalidade 1:` A mensagem será criptografada seguindo determinado pdarão pré-estabelecido.
+- `Funcionalidade 1:` A mensagem será criptografada seguindo determinado padrão de criptografia pré-estabelecido no desafio.
  
 - `Funcionalidade 2:` O usuário pode criptografar e copiar a mensagem criptografada e colar para descriptografar no campo abaixo.
+
+- - `Funcionalidade 3:` O usuário pode colar uma mensagem criptografada (de acordo com o padrão do desafio) e clica em descriptografar para descobrir a mensagem.
   
--  `Funcionalidade 3:` Está sendo feito bloqueio de letras maiúsculas, ponto, virgula e caracteres especiais, exceto exclamação.
+-  `Funcionalidade 4:` Está sendo feito bloqueio de letras maiúsculas, ponto, virgula e caracteres especiais, exceto exclamação.
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
