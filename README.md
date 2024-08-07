@@ -10,7 +10,7 @@
  
 - `Funcionalidade 2:` O usuário pode criptografar e copiar a mensagem criptografada e colar para descriptografar no campo abaixo.
   
--  `Funcionalidade 3:` Está sendo feito bloqueio de letras maiúsculas e caracteres especiais.
+-  `Funcionalidade 3:` Está sendo feito bloqueio de letras maiúsculas, ponto, virgula e caracteres especiais, exceto exclamação.
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
