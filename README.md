@@ -28,8 +28,8 @@ A parte da lógica consegui fazer com muito menos tempo do que perdi tentando co
 
 Como conclusão do desafio hoje subi essa que espero ser a versão final. Tentei fazer uma layout próprio, mas continue com problemas com o CSS e Html. Acontecia os mesmos bugs bizarros de ficar um espaçamento gigantesco em baixo e o elemento da tag footer ficar próximo dos demais elementos. Colocava position: fixed que resolvia, entretanto quando aumenta o tamanho da imagem próximo de 1800 pixel, a borda que defini na tag footer começa a se deslocar para cima e fica sobrepondo outros elementos. Se Fizer isso esse problema ocorre e não sei como corrigir, mas apenas é visível se inspecionar e ficar aumentando a tela, isso eu vejo a partir do monitor que possuo (1920 x 1080). Quando começo a aumentar a largura esse problema ocorre, mas se abrir a página e usar normalmente isso não acontece. Não sei se realmente é um problema. No caso eu fiz todo o layout hoje usando como referência a resolução que foi enviada como ajuda. Usei apenas na parte do CSS, quanto a parte do JavaScript tive apenas que fazer a imagem desaparecer ao clica nos botões criptografar e descriptografar.
 
-## 📁 Acesso ao projeto
+Com a ajuda do suporte da comunidade consegui corrigir o problema e estou concluindo a versão para PC 07/08/2024.
 
-Você pode acessar o projeto clicando [aqui](https://github.com/fearauju/Challenger---desafio-1).
+## 📁 Acesso ao projeto
 
 Você pode acessar o site clicando [aqui](https://challenger-desafio-1.vercel.app/).
