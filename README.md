@@ -2,7 +2,7 @@
 
 ## Resumo do projeto
 
- Este é um projeto desenvolvido no Challenger - decodificador de texto proposto pela alura durante o processo seletivo do programa one Oracle. O primeiro desafo foi criar um projeto que possa criptografar uma mensagem seguindo determinado padrão e que o usuário também possa descruptografá-la na mesma página.
+ Este é um projeto desenvolvido no Challenger - decodificador de texto proposto pela alura durante o processo seletivo do programa one Oracle. O primeiro desafio foi criar um projeto que possa criptografar uma mensagem seguindo determinado padrão e que o usuário também possa descriptografá-la na mesma página.
  
 ## :hammer: Funcionalidades adicionadas ao projeto
  
